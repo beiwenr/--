@@ -317,12 +317,42 @@
             margin-top: 10px;
             font-size: 0.9rem;
         }
+        
+        .sketchfab-embed-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .sketchfab-embed-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .sketchfab-embed-wrapper p {
+            margin: 0;
+            padding: 8px 15px;
+            background-color: #f5f9f6;
+            font-size: 13px;
+            color: #4A4A4A;
+            text-align: center;
+        }
+        
+        .sketchfab-embed-wrapper a {
+            font-weight: bold;
+            color: #1CAAD9;
+            text-decoration: none;
+        }
+        
+        .sketchfab-embed-wrapper a:hover {
+            text-decoration: underline;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1><i class="fas fa-layer-group"></i> 地坪工艺展示</h1>
+        <h1><i class="fas fa-layer-group"></i> 康复大厅拼接地面节点</h1>
         <p class="subtitle">3D效果图与平面效果图对比及施工指南</p>
         
         <div class="color-palette">
@@ -339,8 +369,22 @@
                     <i class="fas fa-cube"></i> 3D效果图
                 </div>
                 <div class="model-container" id="modelContainer">
-                    <div class="loading">
-                        <i class="fas fa-spinner fa-spin"></i> 正在加载3D模型...
+                    <div class="sketchfab-embed-wrapper">
+                        <iframe title="康复大厅拼接地面节点" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/c49b550f1d684ff8be6aa934b76d80df/embed?autospin=1&autostart=1&preload=1">
+                        </iframe>
+                        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                            <a href="https://sketchfab.com/3d-models/c49b550f1d684ff8be6aa934b76d80df?utm_medium=embed&utm_campaign=share-popup&utm_content=c49b550f1d684ff8be6aa934b76d80df" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">
+                                康复大厅拼接地面节点
+                            </a>
+                            by
+                            <a href="https://sketchfab.com/Bo-Zan-Li-Zi?utm_medium=embed&utm_campaign=share-popup&utm_content=c49b550f1d684ff8be6aa934b76d80df" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">
+                                Bo-Zan-Li-Zi
+                            </a>
+                            on
+                            <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=c49b550f1d684ff8be6aa934b76d80df" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">
+                                Sketchfab
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -430,81 +474,4 @@
                             <li>基层处理：4-8小时（根据基层状况）</li>
                             <li>底涂施工：2-4小时（干燥时间：8-12小时</li>
                             <li>中涂施工：4-6小时（干燥时间：12-24小时）</li>
-                            <li>面涂施工：3-5小时（干燥时间：24-48小时）</li>
-                            <li>完全固化：7天后可正常使用</li>
-                        </ul>
-                        
-                        <h3><i class="fas fa-clipboard-list"></i>质量验收标准</h3>
-                        <ul>
-                            <li>表面平整度：2米直尺检查，缝隙≤3mm</li>
-                            <li>表面色泽：均匀一致，无漏涂、气泡、杂质</li>
-                            <li>附着力：划格法测试，附着力≥1.5MPa</li>
-                            <li>硬度：铅笔硬度≥2H</li>
-                            <li>耐磨性：磨耗量≤0.03g（500g/1000转）</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    
-    <footer>
-        <p>地坪工艺展示 © 2023 | 设计制作：Bo-Zan-Li-Zi | 更新时间：2023年11月</p>
-        <p>注：本页面展示的3D模型与平面效果图仅供参考，实际施工请以现场条件为准。</p>
-        <p style="margin-top: 10px; font-size: 0.85rem;">配色方案：版头天蓝色 | 效果图区域绿色 | 施工信息紫色</p>
-    </footer>
-
-    <script>
-        // 嵌入Sketchfab 3D模型
-        document.addEventListener('DOMContentLoaded', function() {
-            const modelContainer = document.getElementById('modelContainer');
-            
-            // 创建iframe嵌入3D模型
-            const iframe = document.createElement('iframe');
-            iframe.title = "地坪工艺";
-            iframe.frameBorder = "0";
-            iframe.allowFullscreen = true;
-            iframe.setAttribute('mozallowfullscreen', 'true');
-            iframe.setAttribute('webkitallowfullscreen', 'true');
-            iframe.allow = "autoplay; fullscreen; xr-spatial-tracking";
-            iframe.setAttribute('xr-spatial-tracking', '');
-            iframe.setAttribute('execution-while-out-of-viewport', '');
-            iframe.setAttribute('execution-while-not-rendered', '');
-            iframe.setAttribute('web-share', '');
-            iframe.src = "https://sketchfab.com/models/dc38e7a21bbf4fe5ba8375f29d84cf64/embed?autospin=1&autostart=1&preload=1";
-            iframe.style.width = "100%";
-            iframe.style.height = "100%";
-            iframe.style.border = "none";
-            
-            // 替换加载提示
-            modelContainer.innerHTML = '';
-            modelContainer.appendChild(iframe);
-            
-            // 处理图片加载失败的情况
-            const floorPlanImage = document.getElementById('floorPlanImage');
-            floorPlanImage.onerror = function() {
-                // 如果图片加载失败，显示替代内容
-                const imageContainer = floorPlanImage.parentElement;
-                imageContainer.innerHTML = `
-                    <div style="text-align: center; color: #7f8c8d; padding: 20px;">
-                        <i class="fas fa-image" style="font-size: 3rem; margin-bottom: 15px; display: block; color: #4caf50;"></i>
-                        <h3 style="color: #2e7d32;">平面效果图加载失败</h3>
-                        <p>图片URL可能已失效，请联系管理员更新</p>
-                        <div style="margin-top: 20px; background-color: #f5f9f6; padding: 15px; border-radius: 8px; text-align: left; border-left: 4px solid #4caf50;">
-                            <p><strong>地坪工艺平面效果图说明：</strong></p>
-                            <p>1. 展示地坪完成后的平面视觉效果</p>
-                            <p>2. 包括颜色、纹理、光泽度等细节</p>
-                            <p>3. 用于施工前的设计确认</p>
-                        </div>
-                    </div>
-                `;
-            };
-            
-            // 图片加载成功时添加加载完成提示
-            floorPlanImage.onload = function() {
-                console.log('平面效果图加载成功');
-            };
-        });
-    </script>
-</body>
-</html>
+                           
