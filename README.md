@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>地坪工艺展示 - 3D与平面效果图</title>
+    <title>康复大厅拼接地面节点 - 3D与二维详图</title>
     <style>
         * {
             margin: 0;
@@ -353,7 +353,7 @@
 <body>
     <header>
         <h1><i class="fas fa-layer-group"></i> 康复大厅拼接地面节点</h1>
-        <p class="subtitle">3D效果图与平面效果图对比及施工指南</p>
+        <p class="subtitle">3D效果图与二维详图对比及施工指南</p>
         
         <div class="color-palette">
             <div class="color-sample blue" title="天蓝色 - 版头"></div>
@@ -391,13 +391,13 @@
             
             <div class="model-section">
                 <div class="section-title">
-                    <i class="fas fa-image"></i> 平面效果图
+                    <i class="fas fa-ruler-combined"></i> 二维详图
                 </div>
                 <div class="image-container">
-                    <img src="https://image2url.com/r2/bucket1/images/1768042522271-499bf818-1b23-4e7c-97b7-888128d01def.png" alt="地坪工艺平面效果图" id="floorPlanImage">
+                    <img src="https://image2url.com/r2/bucket1/images/1768042522271-499bf818-1b23-4e7c-97b7-888128d01def.png" alt="康复大厅拼接地面节点二维详图" id="floorPlanImage">
                 </div>
                 <div class="image-alt-text">
-                    平面效果图展示了地坪完成后的表面纹理、颜色分布和光泽效果
+                    二维详图展示了地面拼接的详细尺寸、材料标注和施工细节
                 </div>
             </div>
         </div>
@@ -474,4 +474,57 @@
                             <li>基层处理：4-8小时（根据基层状况）</li>
                             <li>底涂施工：2-4小时（干燥时间：8-12小时</li>
                             <li>中涂施工：4-6小时（干燥时间：12-24小时）</li>
-                           
+                            <li>面涂施工：3-5小时（干燥时间：24-48小时）</li>
+                            <li>完全固化：7天后可正常使用</li>
+                        </ul>
+                        
+                        <h3><i class="fas fa-clipboard-list"></i>质量验收标准</h3>
+                        <ul>
+                            <li>表面平整度：2米直尺检查，缝隙≤3mm</li>
+                            <li>表面色泽：均匀一致，无漏涂、气泡、杂质</li>
+                            <li>附着力：划格法测试，附着力≥1.5MPa</li>
+                            <li>硬度：铅笔硬度≥2H</li>
+                            <li>耐磨性：磨耗量≤0.03g（500g/1000转）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>康复大厅拼接地面节点 © 2023 | 设计制作：Bo-Zan-Li-Zi | 更新时间：2023年11月</p>
+        <p>注：本页面展示的3D模型与二维详图仅供参考，实际施工请以现场条件为准。</p>
+        <p style="margin-top: 10px; font-size: 0.85rem;">配色方案：版头天蓝色 | 效果图区域绿色 | 施工信息紫色</p>
+    </footer>
+
+    <script>
+        // 处理图片加载失败的情况
+        document.addEventListener('DOMContentLoaded', function() {
+            const floorPlanImage = document.getElementById('floorPlanImage');
+            floorPlanImage.onerror = function() {
+                // 如果图片加载失败，显示替代内容
+                const imageContainer = floorPlanImage.parentElement;
+                imageContainer.innerHTML = `
+                    <div style="text-align: center; color: #7f8c8d; padding: 20px;">
+                        <i class="fas fa-drafting-compass" style="font-size: 3rem; margin-bottom: 15px; display: block; color: #4caf50;"></i>
+                        <h3 style="color: #2e7d32;">二维详图加载失败</h3>
+                        <p>图片URL可能已失效，请联系管理员更新</p>
+                        <div style="margin-top: 20px; background-color: #f5f9f6; padding: 15px; border-radius: 8px; text-align: left; border-left: 4px solid #4caf50;">
+                            <p><strong>康复大厅拼接地面节点二维详图说明：</strong></p>
+                            <p>1. 展示地面拼接的详细构造尺寸</p>
+                            <p>2. 包括材料标注、节点大样和施工细节</p>
+                            <p>3. 用于施工前的设计确认和技术交底</p>
+                        </div>
+                    </div>
+                `;
+            };
+            
+            // 图片加载成功时添加加载完成提示
+            floorPlanImage.onload = function() {
+                console.log('二维详图加载成功');
+            };
+        });
+    </script>
+</body>
+</html>
